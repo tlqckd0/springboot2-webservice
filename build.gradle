@@ -18,7 +18,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group 'com.mySpring.book'
 version '1.0-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
@@ -36,4 +36,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testCompileOnly 'org.projectlombok:lombok'
     testAnnotationProcessor 'org.projectlombok:lombok'
+
+    testCompile("org.springframework.security:spring-security-test")
 }
